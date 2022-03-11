@@ -1,4 +1,10 @@
 .images{
     width: 500px;
     height: 450px;
+    border-color: aqua;
+    border-radius: 10%;
+    
+}
+img{
+    margin:15%;
 }
