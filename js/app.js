@@ -14,14 +14,20 @@ const images = [
 ];
 let imgIndex = 0;
 const imgElement = document.getElementById("slider-img");
-setInterval(()=>{
-    const imgUrl = images[imgIndex];
+
+const timeSetup = setInterval(()=>{
+    
     if(imgIndex >= images.length){
         imgIndex = 0;
        
     }
-    console.log(imgUrl);
+    const imgUrl = images[imgIndex];
+    console.log(imgUrl,imgIndex);
     imgElement.setAttribute('src',imgUrl);
-    imgIndex ++;
+    imgIndex++;
 
 } ,1000)
+
+setInterval(() => {
+    clearInterval(timeSetup)
+}, 1000000);
