@@ -32,3 +32,7 @@ setInterval(() => {
     clearInterval(timeSetup);
 }, 15000);
 
+
+// setInterval(() => {
+//     clearInterval(timeSetup)
+// }, time);
