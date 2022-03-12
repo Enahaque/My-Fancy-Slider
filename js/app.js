@@ -29,5 +29,6 @@ const timeSetup = setInterval(()=>{
 } ,1000)
 
 setInterval(() => {
-    clearInterval(timeSetup)
-}, 1000000);
+    clearInterval(timeSetup);
+}, 15000);
+
